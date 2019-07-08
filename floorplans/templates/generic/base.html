@@ -18,6 +18,7 @@
         <ul>
           <li><a href="{% url "home" %}">Home</a></li>
           {% if user.is_authenticated %}
+          <li><a href="{% url "projects" %}">Projects</a></li>
           {% if user.is_superuser %}
           <li><a href="{% url "admin:index" %}">Admin</a></li>
           {% endif %}
