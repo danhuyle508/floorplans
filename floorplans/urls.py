@@ -24,4 +24,5 @@ urlpatterns = [
     path('accounts/', include('django_registration.backends.activation.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('',home_view,name='home'),
+    path('projects/', include('floorplans_app.urls'))
 ]

@@ -1,0 +1,11 @@
+{% extends "generic/base.html" %}
+
+{% block content %}
+<div class="projects_list">
+{% for project in projects %}
+<div class="status_{{ project }}">
+  <h2>{{ project }}</h2>
+</div>
+{% endfor %}
+</div>
+{% endblock content %}
